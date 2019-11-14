@@ -3,11 +3,11 @@
   margin: auto;
 }
 
-#ekran {
+.ekran {
   width: 250px;
   height: 35px;
   border: 2px solid black;
-  margin: 1px;
+  margin: auto;
   background: lightblue;
   text-align: right;
   font-size: 35px;
@@ -18,13 +18,13 @@
   display: grid;
   grid-gap: 2px;
   background-color: #2196f3;
-  padding: 3px;
+  padding: 2px;
 }
 
 .grid-item {
   background-color: #d9a577;
   text-align: center;
-  padding: 3px;
+  padding: 2px;
   font-size: 1.6vw;
 }
 
@@ -80,13 +80,20 @@
 
 .item17 {
   grid-column: 1 / span 3;
-  grid-row: 9;
+  grid-row: 10;
 }
 
 .item18 {
   grid-column: 1 / span 3;
-  grid-row: 10;
+  grid-row: 11;
+  color: whitesmoke;
 }
+
+.item19 {
+  grid-column: 1 / span 3;
+  grid-row: 9;
+}
+
 /***************************************************/
 
 .grid-container-2 {
@@ -123,6 +130,24 @@
 
 .itemU4 {
   border: 1px solid black;
-  grid-column: 2;
+  grid-column: 1 / span 2;
   grid-row: 3;
+}
+
+.ekran {
+  margin: left;
+}
+
+#ekrana {
+}
+
+#btnIzracunaj {
+  background-color: #a61b0f;
+  font-size: 2.2vw;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.peti-sesti-razred {
+  margin: 5px;
 }

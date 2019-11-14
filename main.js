@@ -1,14 +1,10 @@
 //varijable------------------------------------------------------------
 /*
-let inputHrvatskiJezikJS = document.getElementById("inputHrvatskiJezik").value;
-let inputMatematikaJS = document.getElementById("inputMatematika").value;
 let inputEngleskiJezikJS = document.getElementById("inputEngleskiJezik").value;
 
 let btnIzracunajJS = document.getElementById("btnIzracunaj");
 
 */
-
-//listener------------------------------------------------------------
 let btnIzracunajJS = document.getElementById("btnIzracunaj");
 let ekranjJS = document.getElementById("ekran");
 
@@ -17,9 +13,23 @@ btnIzracunajJS.addEventListener("click", izracun);
 //funkcije------------------------------------------------------------
 
 function izracun() {
+  let petiRazredJS = document.getElementById("petiRazred").value;
+  let sestiRazredJS = document.getElementById("sestiRazred").value;
+  let sedmiRazredJS = document.getElementById("sedmiRazred").value;
+  let osmiRazredJS = document.getElementById("osmiRazred").value;
+
+  let petiRazredBrojJS = Number(petiRazredJS);
+  let sestiRazredBrojJS = Number(sestiRazredJS);
+  let sedmiRazredBrojJS = Number(sedmiRazredJS);
+  let osmiRazredBrojJS = Number(osmiRazredJS);
+
+  let ps =
+    petiRazredBrojJS + sestiRazredBrojJS + sedmiRazredBrojJS + osmiRazredBrojJS;
+  console.log(ps);
+
+  /*
   let inputHrvatskiJezikJS = document.getElementById("inputHrvatskiJezik")
     .value;
-  console.log(inputHrvatskiJezikJS);
   let inputMatematikaJS = document.getElementById("inputMatematika").value;
   let inputEngleskiJezikJS = document.getElementById("inputEngleskiJezik")
     .value;
@@ -36,6 +46,7 @@ function izracun() {
   let inputEngleskiJezikBrojJS = Number(inputEngleskiJezikJS);
 
   //btnIzracunajJS.addEventListener("click", izracun);
+*/
 
   //matematika 7.razred-----------------------------------------
   if (document.getElementById("radioMat2").checked) {
@@ -283,27 +294,42 @@ function izracun() {
 
   //----------------------------------------------------------------
   let sedmi =
-    (radioMatBrojJS +
-      radioHrvatskiBrojJS +
-      radioEngleskiBrojJS +
-      radioPredmetPrviBrojJS +
-      radioPredmetDrugiBrojJS +
-      radioPredmetTreciBrojJS) /
-    6;
-
-  let ekranJS = document.getElementById("ekran");
-
-  ekranJS.innerHTML = sedmi;
+    radioMatBrojJS +
+    radioHrvatskiBrojJS +
+    radioEngleskiBrojJS +
+    radioPredmetPrviBrojJS +
+    radioPredmetDrugiBrojJS +
+    radioPredmetTreciBrojJS;
 
   let osmi =
-    (radioMatOsmiRazredBrojJS +
-      radioHrvatskiOsmiRazredBrojJS +
-      radioEngleskiOsmiRazredBrojJS +
-      radioPredmetPrviOsmiRazredBrojJS +
-      radioPredmetDrugiOsmiRazredBrojJS +
-      radioPredmetTreciOsmiRazredBrojJS) /
-    6;
+    radioMatOsmiRazredBrojJS +
+    radioHrvatskiOsmiRazredBrojJS +
+    radioEngleskiOsmiRazredBrojJS +
+    radioPredmetPrviOsmiRazredBrojJS +
+    radioPredmetDrugiOsmiRazredBrojJS +
+    radioPredmetTreciOsmiRazredBrojJS;
+
+  let ukupnoBodova =
+    petiRazredBrojJS +
+    sestiRazredBrojJS +
+    sedmiRazredBrojJS +
+    osmiRazredBrojJS +
+    sedmi +
+    osmi;
+
+  let ekranJS = document.getElementById("ekran-ukupno");
+  ekranJS.innerHTML = ukupnoBodova;
+
+  console.log(petiRazredBrojJS);
+  console.log(sestiRazredBrojJS);
 
   console.log(sedmi);
   console.log(osmi);
+  console.log(ukupnoBodova);
+
+  /********************************************** */
+
+  if (ukupnoBodova < 60) {
+    alert("kurac od ovce");
+  }
 }
