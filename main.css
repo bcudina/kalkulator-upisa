@@ -1,153 +1,57 @@
-#wrapp {
-  width: 60%;
-  margin: auto;
+/*********************************************/
+.my-container {
+  border: 0px solid green;
+  font-size: 2.7vw;
+}
+
+.my-row {
+  border: 1px solid red;
+}
+
+.my-col {
+  border: 1px dotted blue;
+  background-color: #d9a577;
+  text-align: center;
+  padding: 3px;
+  font-size: 2.1vw;
+}
+
+.podnaslovi {
+  background-color: #f28c0f;
+  font-size: 4vw;
+
 }
 
 .ekran {
-  width: 250px;
-  height: 35px;
+  width: 20%;
+  height: 32%;
+  min-height: 40px;
   border: 2px solid black;
   margin: auto;
   background: lightblue;
   text-align: right;
-  font-size: 35px;
   padding: 3px;
+  margin: left;
+  font-size: 4.2vw;
 }
 
-.grid-container {
-  display: grid;
-  grid-gap: 2px;
-  background-color: #2196f3;
-  padding: 2px;
-}
-
-.grid-item {
-  background-color: #d9a577;
-  text-align: center;
-  padding: 2px;
-  font-size: 1.6vw;
-}
-
-.grid-item2 {
-  background-color: #f2bb13;
-}
-
-.grid-item-naslov {
-  background-color: #f28c0f;
-}
-.grid-item-izracun {
-  background-color: #f2f2f2;
-}
-
-.grid-item-zakljucak {
-  background-color: #a61b0f;
-}
-
-.item1 {
-  grid-column: 1 / span 3;
-  grid-row: 1;
-}
-
-.item2 {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.item3 {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.item4 {
-  grid-column: 3;
-  grid-row: 2;
-}
-
-.item5 {
-  grid-column: 1 / span 3;
-  grid-row: 3;
-}
-
-.item9 {
-  grid-column: 1 / span 3;
-  grid-row: 5;
-}
-
-.item13 {
-  grid-column: 1 / span 3;
-  grid-row: 7;
-}
-
-.item17 {
-  grid-column: 1 / span 3;
-  grid-row: 10;
-}
-
-.item18 {
-  grid-column: 1 / span 3;
-  grid-row: 11;
-  color: whitesmoke;
-}
-
-.item19 {
-  grid-column: 1 / span 3;
-  grid-row: 9;
-}
 
 /***************************************************/
 
-.grid-container-2 {
-  display: grid;
-  grid-gap: 2px;
-  background-color: #2196f3;
-  padding: 3px;
-}
-
-.grid-item-2 {
-  background-color: #d9a577;
-  text-align: center;
-  padding: 3px;
-  font-size: 18px;
-}
-
-.itemU1 {
-  border: 1px solid black;
-  grid-column: 1 / span 2;
-  grid-row: 1;
-}
-
-.itemU2 {
-  border: 1px solid black;
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.itemU3 {
-  border: 1px solid black;
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.itemU4 {
-  border: 1px solid black;
-  grid-column: 1 / span 2;
-  grid-row: 3;
-}
-
-.ekran {
-  margin: left;
-}
-
-#ekrana {
-}
-
 #btnIzracunaj {
   background-color: #a61b0f;
-  font-size: 2.2vw;
+  font-size: 3vw;
   color: whitesmoke;
   cursor: pointer;
 }
 
 .peti-sesti-razred {
   margin: 5px;
+  font-size: 2.5vw;
+}
+
+.my-row2 {
+  margin: 5px;
+  align-items: center;
+
 }
