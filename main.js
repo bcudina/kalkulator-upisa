@@ -17,11 +17,14 @@ function izracun() {
   let sestiRazredJS = document.getElementById("sestiRazred").value || 0;
   let sedmiRazredJS = document.getElementById("sedmiRazred").value || 0;
   let osmiRazredJS = document.getElementById("osmiRazred").value || 0;
+  let dodatniBodoviJS = document.getElementById("dodatniBodovi").value || 0;
 
   let petiRazredBrojJS = Number(petiRazredJS);
   let sestiRazredBrojJS = Number(sestiRazredJS);
   let sedmiRazredBrojJS = Number(sedmiRazredJS);
   let osmiRazredBrojJS = Number(osmiRazredJS);
+  let dodatniBodoviBrojJS = Number(dodatniBodoviJS);
+
 
   let prosjek =
     petiRazredBrojJS + sestiRazredBrojJS + sedmiRazredBrojJS + osmiRazredBrojJS;
@@ -265,6 +268,8 @@ function izracun() {
 
   let radioPredmetTreciOsmiRazredBrojJS = Number(radioPredmetTreciOsmiRazredJS);
 
+
+
   //! izracun-----------------------------------------------------------
 
   let sedmi =
@@ -291,7 +296,7 @@ function izracun() {
   let ukupnoBodova =
     prosjek +
     sedmi +
-    osmi;
+    osmi + dodatniBodoviBrojJS;
 
 
   let ekranSedmiJS = document.getElementById("ekranSedmi");

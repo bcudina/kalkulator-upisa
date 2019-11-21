@@ -23,9 +23,9 @@
 }
 
 .ekran {
-  width: 20%;
-  height: 32%;
-  min-height: 40px;
+  width: 30%;
+  height: 35%;
+  min-height: 50px;
   border: 2px solid black;
   margin: auto;
   background: lightblue;
@@ -54,4 +54,8 @@
   margin: 5px;
   align-items: center;
 
+}
+
+.dropdown-menu {
+  font-size: 10px;
 }
